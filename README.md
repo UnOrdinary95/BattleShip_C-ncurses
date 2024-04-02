@@ -1,7 +1,7 @@
 
 # SAE2 - Bataille Navale
 
-Ce projet a été réalisé dans le cadre d'une SAE (Situation d'Apprentissage et d'Evaluation) en première année de BUT GEII (Bachelor Universitaire de Technologie || Génie Électrique et Informatique Industrielle) durant le premier semestre.
+Ce projet a été réalisé dans le cadre d'une SAE (Situation d'Apprentissage et d'Evaluation) en première année de BUT GEII (Bachelor Universitaire de Technologie || Génie Électrique et Informatique Industrielle) durant le second semestre.
 
 Le projet est écrit en langage C, compilable et exécutable dans un environnement Linux.
 
