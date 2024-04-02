@@ -22,7 +22,7 @@ Pour compiler le fichier battleship1.c, utilisez la commande suivante :
 
 ## Sujet
 
-#### Introduction :
+### Introduction :
 
 La Bataille Navale est un jeu classique qui met à l'épreuve la stratégie et la logique des joueurs. 
 
@@ -33,13 +33,13 @@ Le jeu se déroulera en mode console, avec des fonctionnalités de placement al�
 
 
 
-#### Objectif :
+### Objectif :
 
 L'objectif principal de ce projet est de créer un jeu fonctionnel de Bataille Navale en C, mettant en œuvre les concepts fondamentaux du langage, tels que les tableaux, les boucles, les fonctions, et les structures. 
 
 Ce projet vous offre une opportunité d'appliquer vos connaissances en programmation en résolvant des problèmes concrets.
 
-#### Fonctionnalités principales :
+### Fonctionnalités principales :
 
 1 - Plateau de Jeu: Implémentez une grille de jeu 10x10 pour représenter l'océan. Utilisez des caractères pour afficher les emplacements des bateaux, les tirs réussis, les tirs manqués, etc.
 
@@ -53,7 +53,7 @@ Ce projet vous offre une opportunité d'appliquer vos connaissances en programma
 
 
 
-#### Suggestions d'amélioration (bonus) :
+### Suggestions d'amélioration (bonus) :
 
 a) Interface Graphique: Ajoutez une interface graphique pour améliorer l'expérience utilisateur.
 
