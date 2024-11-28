@@ -1,75 +1,85 @@
 
-# SAE2 - Bataille Navale
+# Pacman-C_ncurses
 
-Ce projet a été réalisé dans le cadre d'une SAE (Situation d'Apprentissage et d'Evaluation) en première année de BUT GEII (Bachelor Universitaire de Technologie || Génie Électrique et Informatique Industrielle) durant le second semestre.
+## Welcome
+Welcome to BattleShip-C_ncurses, a school project developed in May 2024.
 
-Le projet est écrit en langage C, compilable et exécutable dans un environnement Linux.
+## Description
+This project is implemented in C and utilizes the ncurses library to create a Text-based User Interface (TUI). It also uses the socket library in C to enable communication with another computer on the same network. 
 
+As always, it is designed to be compiled and run on Linux systems.
 
+## Project Overview
 
+Battleship is a classic game that tests players' strategy and logic. In this project, we are developing a simplified version of Battleship. The game is played in console mode, featuring random ship placement and player-computer interaction.
 
-## Compilation
+The goal of the game is to move a character named Pac-Man through a maze to eat all the small yellow pellets present. Within this maze, there are 1 to 4 ghosts that are the enemies of Pac-Man. The user must avoid being caught by any of these ghosts.
 
-Pour compiler le fichier battleship1.c, utilisez la commande suivante :
+## Key Features to Implement
 
-```bash
-    gcc battleship1.c -o battleship1 && ./battleship1
-```
-## Captures d'écran
+### 1 - Game Board
+- Implement a 10x10 grid to represent the ocean.
+- Use characters to display ship positions, successful hits, missed hits, etc.
+
+### 2 - Ships
+- Create a structure to represent a ship with attributes such as position (coordinates), size, and a sunk indicator.
+- Generate three ships of size 3 randomly on the board.
+
+### 3 - Random Placement
+- Ensure ships are placed randomly on the board without overlapping.
+
+### 4 - Game Turn
+- Implement game logic allowing the player to specify coordinates to shoot at the board.
+- Display messages indicating if the shot hit, missed, or sank a ship.
+
+### 5 - Game End
+- The game ends when all ships have been sunk.
+- Display the number of turns required to win.
+
+## Suggestions for Improvement (Bonus)
+
+### A - Graphical Interface
+- Add a graphical interface to enhance the user experience using ncurses.
+
+### B - Difficulty Levels
+- Integrate difficulty levels by adjusting ship placement or limiting the number of shots.
+
+### C - Statistics
+- Record and display player statistics, such as the number of games played and won.
+
+### D - Customizable Ships
+- Allow players to specify ship positions at the beginning of the game.
+
+### E - Multiplayer Mode
+- Add a multiplayer mode where two players can play on separate grids.
+
+### F - Bonus : Multiplayer Local Game
+- Using C sockets library
+
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/zftHRmR/Screenshot-2024-11-28-215727.png)
+
+![App Screenshot](https://i.ibb.co/gz8YMSM/Screenshot-2024-11-28-215804.png)
+
+![App Screenshot](https://i.ibb.co/Nyq1QsM/Screenshot-2024-11-28-215837.png)
+
+![App Screenshot](https://i.ibb.co/JHtvP8X/Screenshot-2024-11-28-215924.png)
 
 ![App Screenshot](https://i.ibb.co/pygnbMb/Screenshot-2024-04-02-225126.png)
 
+## Installation
+(Before proceeding, please install ncurses.h on Linux or via WSL on Windows)
 
-## Sujet
+To compile and run this project, follow these steps :
+1. Clone the repository using `git clone` or Download ZIP.
+2. Navigate to the project directory using `cd BattleShip-C_ncurses/src`.
+3. Compile the project using :
 
-### Introduction :
+```
+gcc main.c solo.c multi.c client.c serveur.c -o main -lncurses && ./main 
+```
 
-La Bataille Navale est un jeu classique qui met à l'épreuve la stratégie et la logique des joueurs. 
+## Status Update
 
-Dans ce projet, vous êtes chargés de développer une version simplifiée de la Bataille Navale en utilisant le langage de programmation C. 
-
-
-Le jeu se déroulera en mode console, avec des fonctionnalités de placement aléatoire des bateaux et d'interaction joueur-ordinateur.
-
-
-
-### Objectif :
-
-L'objectif principal de ce projet est de créer un jeu fonctionnel de Bataille Navale en C, mettant en œuvre les concepts fondamentaux du langage, tels que les tableaux, les boucles, les fonctions, et les structures. 
-
-Ce projet vous offre une opportunité d'appliquer vos connaissances en programmation en résolvant des problèmes concrets.
-
-### Fonctionnalités principales :
-
-1 - Plateau de Jeu: Implémentez une grille de jeu 10x10 pour représenter l'océan. Utilisez des caractères pour afficher les emplacements des bateaux, les tirs réussis, les tirs manqués, etc.
-
-2 - Bateaux: Créez une structure représentant un bateau, avec des attributs tels que la position (coordonnées), la taille, et un indicateur de coulé. Générez aléatoirement trois bateaux de taille 3 sur le plateau.
-
-3 - Placement Aléatoire: Assurez-vous que les bateaux sont placés aléatoirement sur le plateau, sans chevauchement. 
-
-4- Tour de Jeu: Implémentez la logique du jeu, permettant au joueur de spécifier des coordonnées pour tirer sur le plateau. Affichez des messages indiquant si le tir a touché, manqué, ou coulé un bateau.
-
-5 - Fin de Jeu: Le jeu doit se terminer lorsque tous les bateaux ont été coulés. Affichez le nombre de tours nécessaires pour remporter la victoire.
-
-
-
-### Suggestions d'amélioration (bonus) :
-
-a) Interface Graphique: Ajoutez une interface graphique pour améliorer l'expérience utilisateur.
-
-b) Niveaux de Difficulté: Intégrez des niveaux de difficulté en ajustant la disposition des bateaux ou en limitant le nombre de tirs.
-
-c) Statistiques: Enregistrez et affichez les statistiques du joueur, telles que le nombre de parties jouées, gagnées, etc.
-
-d) Bateaux Personnalisés: Permettez au joueur de spécifier les emplacements des bateaux au début du jeu.
-
-e) Mode Deux Joueurs: Ajoutez un mode multijoueur où deux joueurs peuvent s'affronter sur des grilles distinctes.
-
-
-## Avancement
-
-Étant donné que le second semestre est en cours, il est probable que le dépôt GitHub ne soit pas à jour.
-
-- 02/04/2024 : Ajout de battleship1.c contenant les fonctionnalités principales
-- L'implémentation des suggestions sont bientôt achevés (il ne manque plus qu'à créer une fonction qui permet le choix du mode de jeu)
-
+Everything was done. 
