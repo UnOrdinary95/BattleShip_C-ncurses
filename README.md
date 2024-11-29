@@ -1,5 +1,5 @@
 
-# Pacman-C_ncurses
+# BattleShip-C_ncurses
 
 ## Welcome
 Welcome to BattleShip-C_ncurses, a school project developed in May 2024.
