@@ -79,7 +79,3 @@ To compile and run this project, follow these steps :
 ```
 gcc main.c solo.c multi.c client.c serveur.c -o main -lncurses && ./main 
 ```
-
-## Status Update
-
-Everything was done. 
