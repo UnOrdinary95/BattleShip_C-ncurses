@@ -13,8 +13,6 @@ As always, it is designed to be compiled and run on Linux systems.
 
 Battleship is a classic game that tests players' strategy and logic. In this project, we are developing a simplified version of Battleship. The game is played in console mode, featuring random ship placement and player-computer interaction.
 
-The goal of the game is to move a character named Pac-Man through a maze to eat all the small yellow pellets present. Within this maze, there are 1 to 4 ghosts that are the enemies of Pac-Man. The user must avoid being caught by any of these ghosts.
-
 ## Key Features to Implement
 
 ### 1 - Game Board
